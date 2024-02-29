@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arya Koirala - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Add custom styles here */
+        html, body {
+            height: 100%;
+        }
+
+        .starry-night {
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100%;
+        }
+
+        .navbar {
+            display: none;
+        }
+
+        .container {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .sections-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            gap: 20px;
+        }
+
+        .section {
+            flex: 1;
+            text-align: center;
+            max-width: 400px;
+        }
+
+        .btn {
+            background-color: black;
+        }
+
+        @media (max-width: 768px) {
+            .sections-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .section {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <main class="starry-night text-white">
+        <div class="container mx-auto">
+            <div class="sections-container">
+                <!-- Name Section -->
+                <section id="name" class="section mb-16 text-center">
+                    <h1 class="text-4xl font-semibold mb-2">Arya Koirala</h1>
+                    <img src="Arya Koirala.jpg" alt="Arya Koirala" class="mx-auto rounded-full w-24 h-52 mb-4">
+                    <p class="text-lg">Student studying Mechanical and Sustainable Engineering. Passionate about solving complex problems and creating sustainable solutions. I aspire to become a car designer in the future and specialize in internal combustion engines.</p>
+                </section>
+
+                <!-- Projects Section -->
+                <section id="projects" class="section mb-16 text-center">
+                    <h2 class="text-3xl font-semibold mb-4">Projects</h2>
+                    <a href="projects.html" class="bg-black hover:bg-gray-800 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline btn">View Projects</a>
+                </section>
+
+                <!-- LinkedIn Section -->
+                <section id="linkedin" class="section mb-16 text-center">
+                    <h2 class="text-3xl font-semibold mb-4">LinkedIn</h2>
+                    <a href="https://www.linkedin.com/in/arya-koirala-735591246/" class="bg-black hover:bg-gray-800 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline btn">LinkedIn Profile</a>
+                </section>
+
+                <!-- Contact Section -->
+                <section id="contact" class="section text-center">
+                    <h2 class="text-3xl font-semibold mb-4">Contact Me</h2>
+                    <form class="max-w-md mx-auto" action="https://formspree.io/f/xbjqowwe" method="POST">
+                        <div class="mb-4">
+                            <label class="block text-gray-700 text-sm font-bold mb-2" for="name">Name</label>
+                            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="Your Name" name="name">
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 text-sm font-bold mb-2" for="email">Email</label>
+                            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Your Email" name="_replyto">
+                        </div>
+                        <div class="mb-6">
+                            <label class="block text-gray-700 text-sm font-bold mb-2" for="message">Message</label>
+                            <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="message" placeholder="Your Message" name="message"></textarea>
+                        </div>
+                        <div class="flex items-center justify-center">
+                            <button class="bg-black hover:bg-gray-800 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline btn" type="submit">
+                                Send Message
+                            </button>
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-blue-500 text-white py-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Arya Koirala - Portfolio</p>
+        </div>
+    </footer>
+
+    <script>
+        // Add any JavaScript code here if needed
+    </script>
+</body>
+</html>
